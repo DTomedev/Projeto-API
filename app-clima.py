@@ -10,7 +10,7 @@ st.image("H:\Gabriel\Davi Tomé\BACK-END\Projeto api-clima\imagem_clima.jpg")
 st.title(" Clima em Tempo Real - OpenWeather")
 st.write("**DIgite o nome da cidade para obter informações climáticas.**")
 
-
+# Entrada das Cidades
 cidades_populares = ["São Paulo", "Curitiba", "Rio de Janeiro", "Belo Horizonte"]
 digite_cidade = st.text_input("**Cidade (ex: São Paulo, Curitiba):**")
 selecione_cidade = st.selectbox("**Ou escolha uma cidade polular:**", cidades_populares, index=None)
@@ -28,6 +28,7 @@ if escolha_cidade:
             if icone:
                 st.image(f"http://openweathermap.org/img/wn/{icone}@2x.png", width=80)
 
+           # Mostra as informações climáticas em caixinhas de métricas
             col1, col2 = st.columns(2)
             col1.metric("Temperatura:", f"{dados['main']['temp']}°C")
             col2.metric("Descrição:", f"{dados['weather'][0]['description'].title()}")
