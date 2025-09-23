@@ -6,7 +6,7 @@ from streamlit_folium import st_folium
 
 api_key = "544c0965f29c4c7610304e7ed9b08e2f"
 
-st.image("H:\Gabriel\Davi Tomé\BACK-END\Projeto api-clima\imagem_clima.jpg")
+st.image("imagens/imagem_clima.jpg")
 st.title(" Clima em Tempo Real - OpenWeather")
 st.write("**DIgite o nome da cidade para obter informações climáticas.**")
 
